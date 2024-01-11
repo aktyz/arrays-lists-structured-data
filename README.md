@@ -11,5 +11,5 @@ Continuation on String theory and introduction of Counting Loop with it's parts:
 
 Comparing For and While Counting Loops
 
-Char class is deined by single quote, e.g. 'a', '1'...
+Char class can be recognised by single quote, e.g. 'a', '1' when String is formed with double quotes: "myString xzy"
 
