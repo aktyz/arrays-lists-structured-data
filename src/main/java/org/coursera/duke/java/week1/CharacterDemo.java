@@ -10,8 +10,8 @@ public class CharacterDemo {
             System.out.println(ch+" "+uch+" "+lch);
         }
     }
-    private static void digitTest() {
-        String test = "ABCabc0123456789';#!";
+    public static void digitTest() {
+        String test = "ABCa9ę9bc0123456789';#!";
         for(int k=0; k < test.length(); k++){
             char ch = test.charAt(k);
             if (Character.isDigit(ch)){
