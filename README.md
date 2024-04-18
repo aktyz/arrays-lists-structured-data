@@ -27,12 +27,22 @@ String encr;
 String encr = alphabet.substring(23);
 encr = encr + alphabet.substring(0, 23);
 ```
-Although we cannot use String class as String class is immutable. Therefore use StringBuilder:
+Although we cannot use String class as String class is immutable. Therefore, use StringBuilder:
 [StringBuilder Class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StringBuilder.html)
 
 (!) Play with StringBuilder Mechanics for a while.
+StringBuilder methods are way faster than String methods.
+Code snippet to measure the runtime of a method (using System.nanotime()):
+```java
+long start = System.nanoTime();
+long finish = System.nanoTime();
+System.out.println("Method time when running on StringBuilders: " + ((finish - start)/1000000) + " nanoseconds");
+```
+
+Another interesting library to explore is JMH (Java Microbenchmark Harness).
 
 ### Concept Review: Loops, Indices
+
 
 #### The Counting Loop used to reverse a String
 This is the simple for loop.

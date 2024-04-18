@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b90be30-a783-4977-b9ea-931ccefd3c1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/SubstringDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CharacterDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CharacterDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,5 +82,16 @@
       <updated>1704284325353</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
