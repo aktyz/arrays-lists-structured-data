@@ -99,4 +99,17 @@ public class CaesarCipher {
         encr.append(upperCaseAlphabet.substring(0, ceasarCipherKey));
         return encr.toString();
     }
+
+    public static void caesarCipherQuiz()
+    {
+        String message1 = "At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
+        String result1 = encrypt(message1, 15);
+        System.out.println("Excercise 5\n\tMy method result:\n\t" + result1);
+
+        String message2 = "At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
+        String result2 = encryptTwoKeys(message2, 8, 21);
+        System.out.println("Excercise 6\n\tMy method result:\n\t" + result2);
+        System.out.println();
+        System.out.println(upperCaseAlphabet.length());
+    }
 }
