@@ -34,4 +34,20 @@ public class BreakingCaesarCipher {
         System.out.println("2's = " + twos + ";\t" + 100.0 * twos/rolls);
         System.out.println("12's = " + twelves + ";\t" + 100.0 * twelves/rolls);
     }
+
+    public static void stimulate(int rolls) {
+        Random rand = new Random();
+        int [] counts = new int[13];
+
+        for(int k = 0; k < rolls; k++)
+        {
+            int d1 = rand.nextInt(6) + 1;
+            int d2 = rand.nextInt(6) + 1;
+            int index = d1 + d2;
+            if(index < 14)
+                counts[index]++;
+        }
+        for(int k = 2; k < counts.length; k++)
+        System.out.println(k + "'s = " + counts[k] + ";\t" + 100.0 * counts[k]/rolls);
+    }
 }
