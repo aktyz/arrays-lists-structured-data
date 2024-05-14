@@ -1,6 +1,9 @@
 # Java Programming: Arrays, Lists & Structured Data
 My notes and code produced when going through [Duke University Coursera Course](https://www.coursera.org/learn/java-programming-arrays-lists-data/)
 
+This is a follow up course, if you need refresher on the previous one go to your [GitHub notes](https://github.com/aktyz/solving-problems-with-software).
+-> checkout the notes on your completed [previous course from O'Reilly](https://github.com/aktyz/OReilly-the-complete-java)
+
 ## Week 1
 [StringBuilder Documentation](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StringBuilder.html)
 
