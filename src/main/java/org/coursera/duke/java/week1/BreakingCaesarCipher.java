@@ -1,5 +1,7 @@
 package org.coursera.duke.java.week1;
 
+import edu.duke.FileResource;
+
 import java.util.Random;
 
 public class BreakingCaesarCipher {
@@ -43,11 +45,55 @@ public class BreakingCaesarCipher {
         {
             int d1 = rand.nextInt(6) + 1;
             int d2 = rand.nextInt(6) + 1;
-            int index = d1 + d2;
-            if(index < 14)
-                counts[index]++;
+            //System.out.println("roll is " + d1 + " + " + d2 + " = " + (d1 + d2));
+            counts[d1 + d2]++;
         }
         for(int k = 2; k < counts.length; k++)
         System.out.println(k + "'s = " + counts[k] + ";\t" + 100.0 * counts[k]/rolls);
+    }
+
+    public static void countShakespeare() {
+        String[] plays = {"caesar.txt", "errors.txt", "hamlet.txt", "likeit.txt", "macbeth.txt", "romeo.txt", "small.txt"};
+
+        String[] common = getCommon();
+        int[] counts = new int[common.length];
+        for (int k = 0; k < plays.length; k++) {
+            FileResource resource = new FileResource("src/main/resources/week1/data/" + plays[k]);
+            countWords(resource, common, counts);
+            System.out.println("Done with " + plays[k]);
+        }
+
+        for(int k = 0; k < common.length; k++)
+            System.out.println(common[k] + "\t" + counts[k]);
+    }
+
+    public static String[] getCommon() {
+        FileResource resource = new FileResource("src/main/resources/week1/data/common.txt");
+        String[] common = new String[20];
+        int index = 0;
+        for (String s : resource.words()) {
+            common[index] = s;
+            index++;
+        }
+        return common;
+    }
+
+    public static void countWords(FileResource resource, String[] common, int[] counts) {
+        for (String word : resource.words()) {
+            word = word.toLowerCase();
+            int index = indexOf(common, word);
+            if (index != -1) {
+                counts[index]++;
+            }
+        }
+    }
+
+    public static int indexOf(String[] list, String word) {
+        for(int k = 0; k < list.length; k++) {
+            if (list[k].equals(word)) {
+                return k;
+            }
+        }
+        return -1;
     }
 }
