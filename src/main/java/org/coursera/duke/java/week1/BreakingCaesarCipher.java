@@ -5,8 +5,8 @@ import edu.duke.FileResource;
 import java.util.Random;
 
 public class BreakingCaesarCipher {
-/** Function counting number of occurance of each letter in a String **/
-    public static void textFingerPrint(String s) {
+/** Function counting number of occurrence of each letter in a String **/
+    public static int[] textFingerPrint(String s) {
         String alpha = "abcdefghijklmnopqrstuvwxyz";
         int[] counters = new int[26];
         for (int k = 0; k < s.length(); k++) {
@@ -17,6 +17,7 @@ public class BreakingCaesarCipher {
         }
         for (int k = 0; k < counters.length; k++)
             System.out.println(alpha.charAt(k) + "\t" + counters[k]);
+        return counters;
     }
 
     public static void simpleStimulate(int rolls) {
@@ -53,7 +54,9 @@ public class BreakingCaesarCipher {
     }
 
     public static void countShakespeare() {
-        String[] plays = {"caesar.txt", "errors.txt", "hamlet.txt", "likeit.txt", "macbeth.txt", "romeo.txt", "small.txt"};
+        String[] plays = {"caesar.txt", "errors.txt", "hamlet.txt", "likeit.txt", "macbeth.txt", "romeo.txt"};
+        //Test on a smaller file:
+        //String[] plays = {"small.txt"};
 
         String[] common = getCommon();
         int[] counts = new int[common.length];
@@ -95,5 +98,25 @@ public class BreakingCaesarCipher {
             }
         }
         return -1;
+    }
+
+    public static String decrypt(String encrypted) {
+        CaesarCipher cc = new CaesarCipher(); // this is yours class :)
+        int[] freqs = textFingerPrint(encrypted);
+        int maxDex = maxIndex(freqs);
+        int dkey = maxDex - 4; // find the distance to the actual e letter
+        if (maxDex < 4) {
+            dkey = 26 - (4 - maxDex);
+        }
+        return cc.encrypt(encrypted, 26 - dkey);
+    }
+
+    public static int maxIndex(int[] vals) {
+        int maxDex = 0;
+        for (int k = 0; k < vals.length; k++) {
+            if(vals[k] > vals[maxDex])
+                maxDex = k;
+        }
+        return maxDex;
     }
 }
