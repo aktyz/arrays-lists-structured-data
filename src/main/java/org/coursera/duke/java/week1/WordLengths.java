@@ -27,8 +27,30 @@ public class WordLengths {
         }
     }
 
+    public static int indexOfMax(int[] counts) {
+        int max = counts[0];
+        int maxIndex = 0;
+        int i = 1;
+        while (i < counts.length) {
+            if(counts[i] > max) {
+                max = counts[i];
+                maxIndex = i;
+            }
+            i++;
+        }
+        return (maxIndex);
+    }
     public static void testCountWordLengths() {
         int[] counts = new int[31];
         countWordLengths(new FileResource("src/main/resources/week1/data/smallHamlet.txt"), counts);
+
+        int maxIndex = indexOfMax(counts);
+        if(maxIndex != 3) {
+            System.out.println("Index of Max test failed!");
+            System.out.println("Count[maxIndex] = " + counts[maxIndex] +",\tmaxIndex = " + maxIndex);
+        }
+        else {
+            System.out.println("Index of Max Test succeeded!");
+        }
     }
 }
