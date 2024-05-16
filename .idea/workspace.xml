@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b90be30-a783-4977-b9ea-931ccefd3c1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/wordsLotsOfEs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/wordsLotsOfEsEncrypted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/WordLengths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/WordLengths.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "14",
-    "last_opened_file_path": "C:/Users/Zyta/Documents/projekt/Duke_Java_Programming/apache-csv.jar",
+    "last_opened_file_path": "C:/Users/Zyta/Documents/projekt/Duke_Java_Programming/Solving_Problems_With_Software",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
