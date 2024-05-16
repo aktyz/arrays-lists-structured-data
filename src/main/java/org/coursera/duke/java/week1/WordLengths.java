@@ -21,24 +21,14 @@ public class WordLengths {
         }
         i = 1;
         while (i < counts.length) {
-            System.out.println("Number of words of length " + i + ":\t" + counts[i]);
+            if(counts[i] > 0)
+                System.out.println("Number of words of length " + i + ":\t" + counts[i]);
             i++;
         }
     }
 
-    private static int findNextAlphabeticIndex(String word, int start) {
-        for (int k = start; k < word.length(); k++) {
-            if(Character.isAlphabetic(word.charAt(k)))
-                return k;
-        }
-        return -1; // not found
-    }
-
-    private static int findNextNonAlphabeticIndex(String word, int start) {
-        for (int k = start; k < word.length(); k++) {
-            if(!Character.isAlphabetic(word.charAt(k)))
-                return k;
-        }
-        return -1; // not found
+    public static void testCountWordLengths() {
+        int[] counts = new int[31];
+        countWordLengths(new FileResource("src/main/resources/week1/data/smallHamlet.txt"), counts);
     }
 }
