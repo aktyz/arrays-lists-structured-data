@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b90be30-a783-4977-b9ea-931ccefd3c1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/wordsLotsOfEs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/wordsLotsOfEsEncrypted.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CaesarBreaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "14",
-    "last_opened_file_path": "C:/Users/Zyta/Documents/projekt/Duke_Java_Programming/Solving_Problems_With_Software",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;14&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zyta/Documents/projekt/Duke_Java_Programming/Solving_Problems_With_Software&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coursera.duke.java.week1.Main" />
@@ -110,6 +110,22 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/WordLengths.java</url>
           <line>46</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CaesarBreaker.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="ceasarCipherKey==28" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CaesarCipher.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CaesarCipher.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
