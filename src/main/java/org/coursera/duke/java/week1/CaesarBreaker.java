@@ -71,4 +71,39 @@ public class CaesarBreaker {
         }
         System.out.println("Test halfOfString() completed!");
     }
+
+    public static int getKey(String s) {
+        int[] frequencies = countLetters(s);
+        int maxFreqPosition = maxIndex(frequencies);
+        int k = 0;
+        if (maxFreqPosition < 4)
+            k = 26 - (4 - maxFreqPosition);
+        else
+            k = maxFreqPosition - 4;
+        return k;
+    }
+
+    public static String decryptTwoKeys(String encrypted) {
+        CaesarCipher cc = new CaesarCipher();
+        StringBuilder startedFrom0 = new StringBuilder();
+        StringBuilder startedFrom1 = new StringBuilder();
+        startedFrom0.append(halfOfString(encrypted, 0));
+        startedFrom1.append(halfOfString(encrypted, 1));
+        int key0 = getKey(startedFrom0.toString());
+        int key1 = getKey(startedFrom1.toString());
+        System.out.println("My guess for key0: " + key0 + ", and key1: " + key1);
+        return cc.encryptTwoKeys(encrypted, 26 - key0, 26 - key1);
+    }
+
+    public static void testDecryptTwoKeys() {
+        String message = "Just a test string with lots of eeeeeeeeeeeeeeeees";
+        String encrypted = "Gwpv c vbuq pvokki yfve iqqu qc bgbgbgbgbgbgbgbgbu";
+        System.out.println("Encrypted with key0: 23, and key1: 2");
+        String result = decryptTwoKeys(encrypted);
+        if (!result.equals("Just a test string with lots of eeeeeeeeeeeeeeeees")) {
+            System.out.println("Your method failed! Your decryption:");
+            System.out.println(result);
+        }
+        System.out.println("Test decryptTwoKeys() completed!");
+    }
 }
