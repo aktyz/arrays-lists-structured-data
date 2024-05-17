@@ -51,4 +51,24 @@ public class CaesarBreaker {
         }
         System.out.println("TestDecrypt completed!");
     }
+
+    public static String halfOfString(String message, int start) {
+        StringBuilder sb = new StringBuilder();
+        while(start < message.length()) {
+            sb.append(message.charAt(start));
+            start += 2;
+        }
+        return sb.toString();
+    }
+
+    public static void testHalfOfString() {
+        String message = "Qbkm Zgis";
+        if (!halfOfString(message, 0).equals("Qk gs")) {
+            System.out.println("Your method failed starting from the index 0");
+        }
+        if(!halfOfString(message, 1).equals("bmZi")) {
+            System.out.println("Your method failed starting from the index 1");
+        }
+        System.out.println("Test halfOfString() completed!");
+    }
 }
