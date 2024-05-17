@@ -1,5 +1,7 @@
 package org.coursera.duke.java.week1;
 
+import edu.duke.FileResource;
+
 public class CaesarBreaker {
     public static int[] countLetters(String s) {
         String alpha = "abcdefghijklmnopqrstuvwxyz";
@@ -105,5 +107,21 @@ public class CaesarBreaker {
             System.out.println(result);
         }
         System.out.println("Test decryptTwoKeys() completed!");
+    }
+    public static void testBreakingTheCaesarCipher() {
+        CaesarCipher cc = new CaesarCipher();
+        String encrypted1 = "Top ncmy qkff vi vguv vbg ycpx";
+        System.out.println("Encrypted with key0: 2, and key1: 20");
+        String result1 = cc.encryptTwoKeys(encrypted1, 26 - 2, 26 - 20);
+        System.out.println(result1);
+        System.out.println();
+        String encrypted2 = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
+        String result2 = decryptTwoKeys(encrypted2);
+        System.out.println(result2);
+        System.out.println();
+        FileResource fr = new FileResource();
+        String result3 = decryptTwoKeys(fr.asString());
+        System.out.println(result3);
+        System.out.println();
     }
 }

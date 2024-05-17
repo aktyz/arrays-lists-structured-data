@@ -53,4 +53,30 @@ public class WordLengths {
             System.out.println("Index of Max Test succeeded!");
         }
     }
+
+    private static void zeroArray(int[] a) {
+        int i = 0;
+        while (i < a.length) {
+            a[i] = 0;
+            i++;
+        }
+    }
+    public static void breakingTheCaesarCipherTest() {
+        int[] counts = new int[31];
+        System.out.println("Counting the length of special strings");
+        countWordLengths(new FileResource("src/main/resources/week1/data/specials.txt"), counts);
+        zeroArray(counts);
+        System.out.println();
+        System.out.println("Counting the lengths of words in romeo.txt");
+        countWordLengths(new FileResource("src/main/resources/week1/data/romeo.txt"), counts);
+        System.out.println("Index of max: " + indexOfMax(counts) + ", with max number of words: " + counts[indexOfMax(counts)]);
+        zeroArray(counts);
+        System.out.println();
+        System.out.println("Counting the lengths of words in lotsOfWords.txt");
+        countWordLengths(new FileResource("src/main/resources/week1/data/lotsOfWords.txt"), counts);
+        System.out.println("Index of max: " + indexOfMax(counts) + ", with max number of words: " + counts[indexOfMax(counts)]);
+        zeroArray(counts);
+        System.out.println();
+        
+    }
 }

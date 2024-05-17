@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b90be30-a783-4977-b9ea-931ccefd3c1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/ mysteryTwoKeysPractice.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/lotsOfWords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/week1/data/specials.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CaesarBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/CaesarBreaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/WordLengths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/coursera/duke/java/week1/WordLengths.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
